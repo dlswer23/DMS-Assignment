@@ -4,13 +4,17 @@
 
 
 
-### 구현하고자 하는 기능
+### 나의 깃허브 정보 보여주기
 
 + user정보
 
   1. login
 
   2. name
+
+  3. company
+
+  4. email
 
      
 
@@ -20,7 +24,8 @@
 
   2. 팔로워 github Url
 
-     
+
+
 
 #### 만약 시간이 남는다면
 
@@ -39,4 +44,4 @@ Follower Activity = 팔로워 정보를 보여주는 클래스
 
 
 
-### API는 Postman을 이용하였습니다.
+### 
