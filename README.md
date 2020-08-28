@@ -12,7 +12,13 @@
 
   2. name
 
-  3. follower
+     
+
++ follower
+
+  1. 팔로워 이름
+
+  2. 팔로워 github Url
 
      
 
