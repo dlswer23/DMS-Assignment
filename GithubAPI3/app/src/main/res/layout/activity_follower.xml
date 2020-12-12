@@ -4,28 +4,31 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Follower">
+    tools:context=".FollowerActivity">
 
     <TextView
         android:id="@+id/follower"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_width="418dp"
+        android:layout_height="98dp"
         android:background="#827575"
         android:gravity="center"
         android:text="Follower"
-        android:textSize="50dp"
+        android:fontFamily="@font/dh"
+        android:textSize="30dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="11dp"
+        android:layout_height="26dp"
         android:layout_marginTop="102dp"
+        android:fontFamily="@font/dh"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/follower" />
+        app:layout_constraintTop_toBottomOf="@+id/follower"
+        app:layout_constraintVertical_bias="0.372" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -11,51 +11,69 @@
     <TextView
         android:id="@+id/textView"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="70dp"
         android:layout_marginTop="48dp"
         android:background="#56000000"
         android:gravity="center"
         android:text="My Github"
         android:textColor="#F8FFFFFF"
-        android:textSize="55dp"
+        android:textSize="45dp"
+        android:fontFamily="@font/dh"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="193dp"
-        android:layout_height="201dp"
-        android:layout_marginTop="20dp"
+        android:layout_width="201dp"
+        android:layout_height="207dp"
+        android:layout_marginTop="48dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:srcCompat="@drawable/ic_launcher_foreground" />
+        app:srcCompat="@drawable/github" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/user_tv"
         android:layout_width="206dp"
-        android:layout_height="100dp"
+        android:layout_height="50dp"
         android:layout_marginTop="30dp"
-        android:onClick="button"
         android:text="User"
+        android:fontFamily="@font/dh"
+        android:background="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/Follower_tv"
         android:layout_width="206dp"
-        android:layout_height="100dp"
+        android:layout_height="50dp"
         android:layout_marginTop="5dp"
-        android:onClick="button2"
+        android:fontFamily="@font/dh"
         android:text="Follower"
+        android:background="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button"
+        app:layout_constraintTop_toBottomOf="@+id/user_tv"
+        app:layout_constraintVertical_bias="0.153" />
+
+    <Button
+        android:id="@+id/followerUrl_tv"
+        android:layout_width="206dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/dh"
+        android:text="Follower Url"
+        android:background="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Follower_tv"
         app:layout_constraintVertical_bias="0.153" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

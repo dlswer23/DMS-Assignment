@@ -11,8 +11,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Follower"></activity>
-        <activity android:name=".User" />
+        <activity android:name=".FollowerUrlActivity"></activity>
+        <activity android:name=".FollowerActivity"></activity>
+        <activity android:name=".UserActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

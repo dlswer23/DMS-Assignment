@@ -4,7 +4,6 @@ import android.os.Bundle;
 import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 import java.io.IOException;
-import java.sql.SQLTransactionRollbackException;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -16,7 +15,7 @@ import okhttp3.Response;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-public class User extends AppCompatActivity {
+public class UserActivity extends AppCompatActivity {
 
 private TextView mTestViewResult;
 
@@ -59,7 +58,7 @@ private TextView mTestViewResult;
                             System.out.println(info.get("url"));
 
 
-                            User.this.runOnUiThread(new Runnable() {
+                            UserActivity.this.runOnUiThread(new Runnable() {
                                 @Override
                                 public void run() {
                                     mTestViewResult.setText(

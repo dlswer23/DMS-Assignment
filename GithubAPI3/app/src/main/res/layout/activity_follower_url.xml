@@ -6,4 +6,32 @@
     android:layout_height="match_parent"
     tools:context=".FollowerUrlActivity">
 
+
+    <TextView
+        android:id="@+id/followerUrl"
+        android:layout_width="418dp"
+        android:layout_height="98dp"
+        android:background="#000000"
+        android:gravity="center"
+        android:text="Follower_Url"
+        android:fontFamily="@font/dh"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="78dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="102dp"
+        android:layout_marginBottom="304dp"
+        android:fontFamily="@font/dh"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/follower"
+        app:layout_constraintVertical_bias="0.372" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

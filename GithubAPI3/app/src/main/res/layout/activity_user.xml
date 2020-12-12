@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".User">
+    tools:context=".UserActivity">
 
 
 
@@ -15,8 +15,9 @@
         android:layout_height="98dp"
         android:background="#6D000000"
         android:gravity="center"
+        android:fontFamily="@font/dh"
         android:text="Information"
-        android:textSize="50dp"
+        android:textSize="30dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.571"
         app:layout_constraintStart_toStartOf="parent"
@@ -26,8 +27,8 @@
         android:id="@+id/ID"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="ID"
         android:textSize="25dp"
+        android:fontFamily="@font/dh"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
