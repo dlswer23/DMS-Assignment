@@ -22,19 +22,19 @@ import okhttp3.Response;
 
 
 
-public class FollowerActivity extends AppCompatActivity {
+public class FollowingActivity extends AppCompatActivity {
 
-    private TextView result_follower;
+    private TextView result_following;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_follower);
+        setContentView(R.layout.activity_following);
 
-        result_follower =  findViewById(R.id.result_follower);
+        result_following = findViewById(R.id.result_following);
 
         OkHttpClient client = new OkHttpClient();
-        String url ="https://api.github.com/users/dlswer23/followers";
+        String url ="https://api.github.com/users/dlswer23/following";
         Request request = new Request.Builder()
                 .url(url)
                 .build();
@@ -53,11 +53,11 @@ public class FollowerActivity extends AppCompatActivity {
                     final List<HashMap<String, Object>> test =
                             mapper.readValue(myResponse, new TypeReference<List<Map<String, Object>>>() {});
 
-                    FollowerActivity.this.runOnUiThread(new Runnable() {
+                    FollowingActivity.this.runOnUiThread(new Runnable() {
                         @Override
                         public void run() {
                             for (HashMap<String, Object> map : test) {
-                                result_follower.setText(result_follower.getText() +
+                                result_following.setText(result_following.getText() +
                                         "이름: " + map.get("login") + "\n" +
                                         "주소: " + map.get("url") + "\n\n"
                                 );

@@ -10,9 +10,9 @@
         android:id="@+id/follower"
         android:layout_width="418dp"
         android:layout_height="98dp"
-        android:background="#827575"
+        android:background="#F4EABB"
         android:gravity="center"
-        android:text="Follower"
+        android:text="나를 팔로우 한 사람"
         android:fontFamily="@font/dh"
         android:textSize="30dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -20,15 +20,18 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView3"
-        android:layout_width="11dp"
-        android:layout_height="26dp"
-        android:layout_marginTop="102dp"
+        android:id="@+id/result_follower"
+        android:layout_width="347dp"
+        android:layout_height="589dp"
+        android:layout_marginTop="10dp"
         android:fontFamily="@font/dh"
+        android:gravity="center"
+        android:textSize="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/follower"
-        app:layout_constraintVertical_bias="0.372" />
+        app:layout_constraintVertical_bias="1.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

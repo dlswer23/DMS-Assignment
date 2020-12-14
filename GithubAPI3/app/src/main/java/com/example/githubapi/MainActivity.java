@@ -17,10 +17,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        button = (button)findViewById(R.id.button)
 
 
     }
+
     public void button(View v){
         Intent intent = new Intent(getBaseContext(), UserActivity.class);
 
@@ -33,10 +33,11 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
 
     }
-    public void button3n(View v){
-        Intent intent = new Intent(getBaseContext(), FollowerUrlActivity.class);
+    public void button3(View v){
+        Intent intent = new Intent(getBaseContext(), FollowingActivity.class);
 
         startActivity(intent);
 
     }
+
 }

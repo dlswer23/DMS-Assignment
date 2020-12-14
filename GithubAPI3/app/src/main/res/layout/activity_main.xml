@@ -40,6 +40,7 @@
         android:layout_marginTop="30dp"
         android:text="User"
         android:fontFamily="@font/dh"
+        android:onClick="button"
         android:background="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
@@ -54,6 +55,7 @@
         android:fontFamily="@font/dh"
         android:text="Follower"
         android:background="#FFFFFF"
+        android:onClick="button2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
@@ -62,13 +64,14 @@
         app:layout_constraintVertical_bias="0.153" />
 
     <Button
-        android:id="@+id/followerUrl_tv"
+        android:id="@+id/following_tv"
         android:layout_width="206dp"
         android:layout_height="50dp"
         android:layout_marginTop="5dp"
         android:fontFamily="@font/dh"
-        android:text="Follower Url"
+        android:text="Following"
         android:background="#FFFFFF"
+        android:onClick="button3"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"

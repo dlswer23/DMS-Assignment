@@ -17,7 +17,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 
 public class UserActivity extends AppCompatActivity {
 
-private TextView mTestViewResult;
+private TextView information_tv;
 
 
 
@@ -25,7 +25,7 @@ private TextView mTestViewResult;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user);
-        mTestViewResult = findViewById(R.id.ID);
+        information_tv = findViewById(R.id.information_tv);
 
 
         OkHttpClient client = new OkHttpClient();
@@ -48,24 +48,25 @@ private TextView mTestViewResult;
                             final HashMap<String, Object> info = mapper.readValue(myResponse, new TypeReference<Map<String, Object>>() {});
 
                             info.get("login");
-                            info.get("name");
+                            info.get("type");
                             info.get("company");
-                            info.get("url");
+                            info.get("location");
 
                             System.out.println(info.get("login"));
-                            System.out.println(info.get("name"));
+                            System.out.println(info.get("type"));
                             System.out.println(info.get("company"));
-                            System.out.println(info.get("url"));
+                            System.out.println(info.get("location"));
 
 
                             UserActivity.this.runOnUiThread(new Runnable() {
                                 @Override
                                 public void run() {
-                                    mTestViewResult.setText(
+                                    information_tv.setText(
+
                                             "로그인: " + info.get("login").toString() + "\n" +
-                                            "이름: " + info.get("name").toString() + "\n" +
-                                                    "소속: " + info.get("company").toString() + "\n" +
-                                                    "URL: " + info.get("url").toString()
+                                            "상태 : " + info.get("type").toString() + "\n" +
+                                            "소속: " + info.get("company").toString() + "\n" +
+                                            "지역 : " + info.get("location").toString()
 
                                     );
                                 }
