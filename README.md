@@ -20,18 +20,25 @@
 
 + follower
 
-  1. 팔로워 이름
+  1. 내가 팔로우 하는 사람 이름
 
-  2. 팔로워 github Url
-
-
+  2. 내가 팔로우 하는 github Url
 
 
-#### 만약 시간이 남는다면
++ folliwing
 
-+ 메인페이지에 로그인 구현
+  1. 나를 팔로우 하는 사람 이름
+  
+  2. 나를 팔로우 하는 사람 github Url
 
 
+
+### Programming Interface
+
+ Rest API -> OKHTTP3
+ Open API -> GitHub
+ 
+ 
 
 ### 필요한 Java class
 
@@ -40,5 +47,7 @@ main Activity = 메인 클래스
 User Activity = 나의 정보를 보여주는 클래스
 
 Follower Activity = 팔로워 정보를 보여주는 클래스
+
+Following Activity = 나를 팔로우 하는 사람의 정보를 보여주는 클래스
 
 
