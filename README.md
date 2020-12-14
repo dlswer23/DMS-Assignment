@@ -25,7 +25,7 @@
   2. 내가 팔로우 하는 github Url
 
 
-+ folliwing
++ following
 
   1. 나를 팔로우 하는 사람 이름
   
