@@ -39,5 +39,11 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
 
     }
+    public void button4(View v){
+        Intent intent = new Intent(getBaseContext(), SearchActivity.class);
+
+        startActivity(intent);
+
+    }
 
 }
